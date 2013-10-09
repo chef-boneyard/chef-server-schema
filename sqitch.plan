@@ -27,3 +27,5 @@ node_external_storage [nodes] 2013-09-05T21:30:08Z Christopher Maier <cm@opscode
 
 purge_sequel 2013-09-05T21:00:09Z Christopher Maier <cm@opscode.com> # Remove Sequel metadata
 @1.0.3 2013-09-05T19:05:52Z Christopher Maier <cm@opscode.com> # Purge Sequel metadata
+
+cookbook_versions_cookbook_id_index [cookbook_versions] 2013-10-09T15:06:07Z Oliver Ferrigni <oliver@opscode.com># Add index cookbook_versions(cookbook_id)
