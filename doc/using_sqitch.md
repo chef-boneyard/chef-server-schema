@@ -28,7 +28,17 @@ a developer.
     sqitch rework ${CHANGESET_TO_REWORK} -n ${COMMENT}
 
 Use this when you need to change the contents of a previous changeset
-instead of overwriting the original changeset files.
+instead of overwriting the original changeset files.  This is best
+used when editing stored procedures, views, etc.  You should _not_ use
+rework when adding indexes, adding or changing columns, or other
+similar operations.
+
+Rework is important when seeing a diff of the change you made is
+useful, as is the case with changing stored procedures.  If the change
+you're making is _textually_ dependent on the current state of the
+object your changing, then rework is probably what you want.
+
+See the [documentation](https://metacpan.org/module/sqitchtutorial#In-Place-Changes) for `rework` online, as well.
 
 # Suggested Best Practices
 
