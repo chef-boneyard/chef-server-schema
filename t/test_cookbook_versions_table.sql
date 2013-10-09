@@ -50,6 +50,8 @@ BEGIN
                            'cookbook_versions_cookbook_id_major_minor_patch_key',
                            ARRAY['cookbook_id', 'major', 'minor', 'patch']);
 
+  RETURN QUERY SELECT chef_pgtap.has_index('cookbook_versions', 'cookbook_versions_cookbook_id_index', 'cookbook_id');
+
   -- Keys
 
   RETURN QUERY SELECT has_pk('cookbook_versions');
