@@ -1,5 +1,8 @@
-Chef Server PostgreSQL Schema
-=============================
+DEPRECATED: Chef Server PostgreSQL Schema
+=========================================
+
+WARNING: Schema changes for Chef 12+ should happen in oc_erchef. NOT
+HERE. YOU PROBABLY DON'T WANT TO BE HERE.
 
 # Modifying the Schema
 
